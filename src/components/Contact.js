@@ -1,6 +1,8 @@
 
 import React from 'react';
 import './Contact.css';
+import propTypes from 'prop-types';
+
 const Contact = ({ Name, Avatar, Online }) => {
   return (
     <div className="Contact">
@@ -11,5 +13,12 @@ const Contact = ({ Name, Avatar, Online }) => {
       </div>
     </div>
   );
+}
+
+Contact.propTypes = {
+  Name: propTypes.string.isRequired,
+  Avatar: propTypes.string.isRequired,
+  Online: propTypes.bool.isRequired
+
 }
 export default Contact;
