@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import Contact from "./components/Contact";
+import ContactList from "./components/ContactList";
 
-const Person1 = {
+/*const Person1 = {
   Name: "Joan Harper",
   Avatar: 'https://randomuser.me/api/portraits/women/17.jpg',
   Online: true,
@@ -19,14 +19,10 @@ const Person3 = {
   Avatar: 'https://randomuser.me/api/portraits/women/57.jpg',
   Online: true,
 }
-
+*/
 function App() {
   return (
-    <div>
-      <Contact {...Person1} />
-      <Contact {...Person2} />
-      <Contact {...Person3} />
-    </div>
+      <ContactList />
   );
 }
 

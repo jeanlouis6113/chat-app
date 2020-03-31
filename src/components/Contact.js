@@ -3,22 +3,22 @@ import React from 'react';
 import './Contact.css';
 import propTypes from 'prop-types';
 
-const Contact = ({ Name, Avatar, Online }) => {
+const Contact = ({ name, avatar, online }) => {
   return (
     <div className="Contact">
-      <img className="avatar" src={Avatar} />
+      <img className="avatar" src={avatar} />
       <div className="status name">
-        <p>{Name}</p>
-        <p className="status text">{Online ? <span className="status-online"></span> : <span className="status-offline"></span>} {Online ? "Online" : "Offline"}</p>
+        <p>{name}</p>
+        <p className="status text">{online ? <span className="status-online"></span> : <span className="status-offline"></span>} {online ? "Online" : "Offline"}</p>
       </div>
     </div>
   );
 }
 
 Contact.propTypes = {
-  Name: propTypes.string.isRequired,
-  Avatar: propTypes.string.isRequired,
-  Online: propTypes.bool.isRequired
+  name: propTypes.string.isRequired,
+  avatar: propTypes.string.isRequired,
+  online: propTypes.bool.isRequired
 
 }
 export default Contact;
