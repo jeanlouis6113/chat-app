@@ -5,7 +5,9 @@ import ContactList from "./components/ContactList";
 
 function App() {
   return (
-      <Contact />
+    <div className="App">
+      <ContactList />
+    </div>
   );
 }
 
